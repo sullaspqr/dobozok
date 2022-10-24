@@ -10,10 +10,8 @@ state.y = container.offsetTop;
 
 window.onload = render;
 
-// 1. Készíts renderelő függvényt, ami megjeleníti a dobozt a state-ből kiolvasott adatok alapján
 function render() {
-  // 2. A dobozt úgy rajzold ki, hogy az element-nek a position style attribútuma "absolute", a 
-  //    left és a top attribútuma pedig a state-ből származó x és y érték
+
   const doboz = `
     <div
       style="width: 200px; position: absolute; left: ${state.x}px; top: ${state.y}px;"
